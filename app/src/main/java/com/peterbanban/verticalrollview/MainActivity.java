@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.widget.TextView;
-import com.peterbanban.verticalrollview.VerticalRollView.IViewGetter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,13 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mVerticalRollView1 = findViewById(R.id.roll_view_1);
         mVerticalRollView2 = findViewById(R.id.roll_view_2);
+        mVerticalRollView1.setRollDown(true);
         initVerticalRollView(mVerticalRollView1, 1);
         initVerticalRollView(mVerticalRollView2, 3);
     }
 
     private void initVerticalRollView(VerticalRollView<Bean, TextView> rollView, int showLength){
         rollView.setShowLength(showLength);
-        rollView.setDelayTime(3000);
+        rollView.setDelayTime(2000);
+        rollView.setDuration(300);
         rollView.setIViewGetter(Bean.createBeanList(), new IViewGetter<Bean, TextView>() {
             @Override
             public TextView createView(Context context) {
