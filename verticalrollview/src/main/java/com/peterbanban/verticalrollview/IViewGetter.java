@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 
 /**
- * Created by hqx on 2019/8/8 15:31.
+ * Created by hqx on 2019/8/8
  */
 public interface IViewGetter<T,V extends View> {
   V createView(Context context);

@@ -7,6 +7,9 @@ import android.view.animation.Interpolator;
 import android.widget.Scroller;
 import java.lang.reflect.Field;
 
+/**
+ * Created by hqx on 2019/8/8
+ */
 public class VerticalScroll extends Scroller {
   private int DURATION = 500;
   private static Interpolator verticalInterpolator = new FastOutSlowInInterpolator();

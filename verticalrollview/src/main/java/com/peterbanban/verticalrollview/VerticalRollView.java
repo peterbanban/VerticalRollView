@@ -18,6 +18,7 @@ import java.util.List;
  * support roll up and roll down
  * @param <T> data type
  * @param <V> view type
+ * Created by hqx on 2019/8/8
  */
 public class VerticalRollView <T, V extends View> extends FrameLayout {
   private VerticalViewPager viewPager;

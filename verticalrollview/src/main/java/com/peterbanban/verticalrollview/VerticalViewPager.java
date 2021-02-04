@@ -8,6 +8,9 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+/**
+ * Created by hqx on 2019/8/8
+ */
 public class VerticalViewPager extends ViewPager {
   private int dividerSize = 1;
 
